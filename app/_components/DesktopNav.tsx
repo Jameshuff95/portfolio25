@@ -4,9 +4,9 @@ import Image from 'next/image';
 
 const DesktopNav = () => {
   return (
-    <div className="flex">
+    <div className="flex h-15">
       <Image
-        src="/../../public/james.jpg"
+        src="/J.jpg"
         alt="Image of James"
         width={0}
         height={0}

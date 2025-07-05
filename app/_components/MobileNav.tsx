@@ -15,7 +15,7 @@ const MobileNav = () => {
   return (
     <div className="flex justify-between items-center p-2 border">
       <Image
-        src="/../../public/james.jpg"
+        src="/J.jpg"
         alt="Image of James"
         width={0}
         height={0}
@@ -23,7 +23,7 @@ const MobileNav = () => {
       />
 
       <BiMenu
-        size={25}
+        size={60}
         onClick={() => handleButton()}
         className="cursor-pointer"
       />

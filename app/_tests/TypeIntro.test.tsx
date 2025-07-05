@@ -9,7 +9,7 @@ jest.mock('../_lists/lists.tsx', () => ({
 }));
 
 // Import the component under test
-import { TypeIntro } from '../page';
+import { TypeIntro } from '../_functions/TypeIntro';
 
 jest.useFakeTimers();
 
