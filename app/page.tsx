@@ -3,7 +3,7 @@
 import { useState, useEffect } from 'react';
 import { introWords, introDropdowns } from './_lists/lists';
 
-export const TypeIntro = () => {
+const TypeIntro = () => {
   const [currentWordIndex, setCurrentWordIndex] = useState(0);
   const [displayText, setDisplayText] = useState('');
   const [isDeleting, setIsDeleting] = useState(false);
