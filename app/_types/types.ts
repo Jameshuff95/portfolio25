@@ -14,3 +14,12 @@ export interface FooterLink {
 export interface MobileMenuProps {
   closeMenu: () => void;
 }
+
+export interface IntroProps {
+  id: number;
+  title: string;
+  info?: {
+    title: string;
+    description: string;
+  };
+}
