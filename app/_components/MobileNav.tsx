@@ -19,13 +19,13 @@ const MobileNav = () => {
         alt="Image of James"
         width={0}
         height={0}
-        className="border w-1/4 h-3/4"
+        className="border border-blue-100 rounded-full w-1/6 h-3/4"
       />
 
       <BiMenu
         size={60}
         onClick={() => handleButton()}
-        className="cursor-pointer"
+        className={`cursor-pointer ${isActive ? 'border rounded-md' : null}`}
       />
 
       {isActive && (

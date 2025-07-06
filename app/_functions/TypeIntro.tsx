@@ -32,15 +32,20 @@ export const TypeIntro = () => {
   }, [displayText, isDeleting, currentWordIndex, currentTitle]);
 
   return (
-    <div className="flex flex-col justify-center gap-2 items-center h-1/6 text-3xl">
-      <h2>Hi! My name is James.</h2>
-      <div className="flex gap-1">
-        <p>I am a</p>
-        <p className="font-mono">
-          {displayText}
-          <span className="animate-pulse">|</span>
-        </p>
-      </div>
-    </div>
+    <section className="flex flex-col justify-center gap-2 items-center text-3xl">
+      <header>
+        <h2>Hi! My name is James.</h2>
+      </header>
+
+      <article>
+        <div className="flex gap-1">
+          <p>I am a</p>
+          <p className="font-mono">
+            <span aria-label="animated-typing">{displayText}</span>
+            <span className="animate-pulse">|</span>
+          </p>
+        </div>
+      </article>
+    </section>
   );
 };

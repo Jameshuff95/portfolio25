@@ -37,7 +37,7 @@ export const introPhrases: IntroProps[] = [
 export const introDropdowns: IntroProps[] = [
   {
     id: 1,
-    title: 'What I Am All About',
+    title: 'My Goals',
     info: {
       title: 'About Title 1',
       description: 'This is a description.',
@@ -45,7 +45,7 @@ export const introDropdowns: IntroProps[] = [
   },
   {
     id: 2,
-    title: 'My Goals',
+    title: 'My Achievements',
     info: {
       title: 'About Title 2',
       description: 'This is a description.',
@@ -53,17 +53,9 @@ export const introDropdowns: IntroProps[] = [
   },
   {
     id: 3,
-    title: 'My Achievements',
-    info: {
-      title: 'About Title 3',
-      description: 'This is a description.',
-    },
-  },
-  {
-    id: 4,
     title: 'Other',
     info: {
-      title: 'About Title 4',
+      title: 'About Title 3',
       description: 'This is a description.',
     },
   },

@@ -45,4 +45,40 @@ export const footerLinks: FooterLink[] = [
     href: '/',
     title: 'Footer Link 3',
   },
+  {
+    id: 4,
+    ariaLabel: 'Footer Link 4',
+    href: '/',
+    title: 'Footer Link 4',
+  },
+  {
+    id: 5,
+    ariaLabel: 'Footer Link 5',
+    href: '/',
+    title: 'Footer Link 5',
+  },
+  {
+    id: 6,
+    ariaLabel: 'Footer Link 6',
+    href: '/',
+    title: 'Footer Link 6',
+  },
+  {
+    id: 7,
+    ariaLabel: 'Footer Link 7',
+    href: '/',
+    title: 'Footer Link 7',
+  },
+  {
+    id: 8,
+    ariaLabel: 'Footer Link 8',
+    href: '/',
+    title: 'Footer Link 8',
+  },
+  {
+    id: 9,
+    ariaLabel: 'Footer Link 9',
+    href: '/',
+    title: 'Footer Link 9',
+  },
 ];
