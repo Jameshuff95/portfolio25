@@ -17,7 +17,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className="text-foreground border flex flex-col min-h-screen select-none">
+      <body className="text-foreground flex flex-col min-h-screen select-none">
         <Nav />
         <div className="flex flex-grow flex-col ">{children}</div>
         <Footer />

@@ -13,7 +13,7 @@ const MobileNav = () => {
   };
 
   return (
-    <div className="flex justify-between items-center p-2 border">
+    <div className="flex justify-between items-center p-2">
       <Image
         src="/J.jpg"
         alt="Image of James"

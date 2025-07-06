@@ -1,5 +1,13 @@
+'use client';
+
+import { ContactForm } from '../../_components/ContactForm';
+
 const Contact = () => {
-  return <div>Contact Page</div>;
+  return (
+    <>
+      <ContactForm />
+    </>
+  );
 };
 
 export default Contact;

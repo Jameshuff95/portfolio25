@@ -29,8 +29,12 @@ export const Dropdowns = () => {
                   id={`dropdown-panel-${dropdown.id}`}
                   className="border mt-2 p-2 flex flex-col gap-1 bg-foreground text-background"
                 >
-                  <p className="text-xl">{dropdown.info?.title}</p>
-                  <p>{dropdown.info?.description}</p>
+                  {dropdown.info?.map((item) => (
+                    <div key={item.id}>
+                      <p className="text-xl">{item.title}</p>
+                      <p>{item.description}</p>
+                    </div>
+                  ))}
                 </div>
               )}
             </li>

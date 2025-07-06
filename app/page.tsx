@@ -1,7 +1,7 @@
 'use client';
 
 import { TypeIntro } from './_functions/TypeIntro';
-import { Dropdowns } from './_functions/DropDowns';
+import { Dropdowns } from './_components/DropDowns';
 
 export default function Home() {
   return (

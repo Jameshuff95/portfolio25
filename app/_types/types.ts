@@ -19,7 +19,8 @@ export interface IntroProps {
   id: number;
   title: string;
   info?: {
+    id: number;
     title: string;
     description: string;
-  };
+  }[];
 }
