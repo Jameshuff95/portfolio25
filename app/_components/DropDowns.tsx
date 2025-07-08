@@ -1,8 +1,15 @@
 import { useDropdownToggle } from '../_hooks/useDropdowns';
 import { introDropdowns } from '../_lists/lists';
+import { useState } from 'react';
 
 export const Dropdowns = () => {
   const { expandedId, toggleDropdown } = useDropdownToggle();
+
+  const [isClicked, setIsClicked] = useState(false);
+
+  const handleIsClicked = () => {
+    setIsClicked(!isClicked);
+  };
 
   return (
     <main className="flex flex-col p-2">
@@ -18,13 +25,19 @@ export const Dropdowns = () => {
             <li key={dropdown.id} className="p-4 border rounded-sm bg-gray-700">
               <div className="flex justify-between items-center">
                 <h3 className="text-3xl">{dropdown.title}</h3>
-                <i
-                  className="bi bi-plus cursor-pointer text-4xl"
-                  onClick={() => toggleDropdown(dropdown.id)}
-                  role="button"
-                  aria-expanded={expandedId === dropdown.id}
-                  aria-controls={`dropdown-panel-${dropdown.id}`}
-                />
+                <span
+                  onClick={() => {
+                    handleIsClicked();
+                  }}
+                >
+                  <i
+                    className={`bi ${isClicked ? 'bi-chevron-down' : 'bi-chevron-up'} cursor-pointer text-4xl`}
+                    onClick={() => toggleDropdown(dropdown.id)}
+                    role="button"
+                    aria-expanded={expandedId === dropdown.id}
+                    aria-controls={`dropdown-panel-${dropdown.id}`}
+                  />
+                </span>
               </div>
 
               {expandedId === dropdown.id && (

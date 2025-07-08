@@ -42,7 +42,7 @@ export const TypeIntro = () => {
           <p>I am a</p>
           <p className="font-mono">
             <span aria-label="animated-typing">{displayText}</span>
-            <span className="animate-pulse">|</span>
+            <span className="animate-pulse relative z-[1]">|</span>
           </p>
         </div>
       </article>

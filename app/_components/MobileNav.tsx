@@ -25,13 +25,16 @@ const MobileNav = () => {
       <BiMenu
         size={60}
         onClick={() => handleButton()}
-        className={`cursor-pointer ${isActive ? 'border rounded-md' : null}`}
+        className={`cursor-pointer ${isActive ? 'border rounded-md' : null} position-relative z-[99]`}
       />
 
       {isActive && (
-        <div className="absolute top-0 left-0 w-4/5">
-          <MobileMenu closeMenu={() => handleButton()} />
-        </div>
+        <>
+          <div className="fixed inset-0 bg-black/50 z-[98] pointer-events-auto" />
+          <div className="absolute top-0 left-0 w-4/5">
+            <MobileMenu closeMenu={() => handleButton()} />
+          </div>
+        </>
       )}
     </div>
   );
