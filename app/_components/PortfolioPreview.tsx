@@ -17,7 +17,7 @@ export const PortfolioPreview = () => {
             {projectList.map((project) => (
               <article
                 key={project.id}
-                className="flex flex-col items-center p-2 gap-3 border"
+                className="flex flex-col items-center p-2 gap-3 border rounded-sm bg-gray-700"
               >
                 <div className="flex flex-col justify-between items-center p-2 w-1/2 sm:w-full gap-3">
                   <h3 className="text-center text-2xl sm:text-6xl">
@@ -32,14 +32,14 @@ export const PortfolioPreview = () => {
                   />
                 </div>
 
-                <div className="flex flex-col justify-between p-2 border rounded-sm bg-foreground text-background w-1/2 min-h-35 sm:w-full">
+                <div className="flex flex-col justify-between items-center p-2 border rounded-sm bg-foreground text-background w-1/2 min-h-35 w-full">
                   <p className="text-lg sm:text-center sm:flex sm:flex-col sm:gap-5">
                     {project.description}
                   </p>
 
                   <div className="flex sm:justify-center justify-end p-2">
                     <Link href={project.link}>
-                      <button className="border cursor-pointer p-2 text-lg rounded-md bg-gray-600 text-foreground border border-black">
+                      <button className="border cursor-pointer p-2 text-lg rounded-md bg-gray-600 text-foreground border border-black hover:scale-95 active:scale-90">
                         Click for more!
                       </button>
                     </Link>
