@@ -1,6 +1,6 @@
 'use client';
 
-import { useScreenWidth } from '../_hooks/screenWidth';
+import { useScreenWidth } from '../_hooks/useScreenWidth';
 
 import DesktopNav from './DesktopNav';
 import MobileNav from './MobileNav';

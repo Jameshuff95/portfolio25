@@ -9,7 +9,7 @@ const MobileMenu: React.FC<MobileMenuProps> = ({ closeMenu }) => {
       {navLinks.map((navLink) => (
         <Link key={navLink.id} href={navLink.href}>
           <li
-            className="text-background border border-transparent hover:border-background p-2 cursor-pointer text-4xl font-bold"
+            className="text-background border border-transparent p-2 cursor-pointer text-4xl font-bold"
             onClick={closeMenu}
           >
             {navLink.title}
