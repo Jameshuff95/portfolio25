@@ -1,5 +1,7 @@
 import { useState } from 'react';
 
+import { emailPattern } from '../_regex/regex';
+
 export const ContactForm = () => {
   const [formData, setFormData] = useState({
     name: '',
@@ -7,11 +9,19 @@ export const ContactForm = () => {
     message: '',
   });
 
+  const [isValid, setIsValid] = useState(true);
+
   const handleChange = (
     e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
   ) => {
     const { name, value } = e.target;
-    setFormData((prev) => ({ ...prev, [name]: value }));
+    setFormData((prev) => {
+      const updated = { ...prev, [name]: value };
+      if (name === 'email') {
+        setIsValid(emailPattern.test(formData.email));
+      }
+      return updated;
+    });
   };
 
   const showSuccessMessage = () => (
@@ -56,6 +66,7 @@ export const ContactForm = () => {
       >
         {/* name and email container */}
         <div className=" min-h-40 text-3xl flex flex-col gap-4 w-full">
+          {/* name */}
           <label className="flex flex-col">
             <span className="mb-1">Name</span>
             <input
@@ -68,6 +79,7 @@ export const ContactForm = () => {
             />
           </label>
 
+          {/* email */}
           <label className="flex flex-col">
             <span className="mb-1 text-3xl">Email</span>
             <input
@@ -78,6 +90,11 @@ export const ContactForm = () => {
               onChange={handleChange}
               className="p-2 border rounded bg-foreground text-background outline-none"
             />
+            {!isValid && formData.email.length >= 5 && (
+              <p className="text-red-600 text-sm">
+                Please enter a valid email.
+              </p>
+            )}
           </label>
         </div>
 
