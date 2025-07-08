@@ -32,13 +32,13 @@ export const TypeIntro = () => {
   }, [displayText, isDeleting, currentWordIndex, currentTitle]);
 
   return (
-    <section className="flex flex-col justify-center gap-2 items-center text-3xl">
+    <section className="flex flex-col justify-center gap-3 items-center text-3xl text-center">
       <header>
         <h2>Hi! My name is James.</h2>
       </header>
 
       <article>
-        <div className="flex gap-1">
+        <div className="flex flex-col gap-1">
           <p>I am a</p>
           <p className="font-mono">
             <span aria-label="animated-typing">{displayText}</span>

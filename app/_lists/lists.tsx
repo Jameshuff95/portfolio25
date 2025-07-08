@@ -1,4 +1,4 @@
-import { IntroProps } from '../_types/types';
+import { IntroProps, ProjectList } from '../_types/types';
 
 export const introWords: IntroProps[] = [
   {
@@ -97,5 +97,32 @@ export const introDropdowns: IntroProps[] = [
         description: 'This is a description.',
       },
     ],
+  },
+];
+
+export const projectList: ProjectList[] = [
+  {
+    id: 1,
+    link: '/',
+    image: '/J.jpg',
+    alt: 'Image alt 1',
+    title: 'Project 1',
+    description: 'This is a basic description of the project.',
+  },
+  {
+    id: 2,
+    link: '/',
+    image: '/J.jpg',
+    alt: 'Image alt 2',
+    title: 'Project 2',
+    description: 'This is a basic description of the project.',
+  },
+  {
+    id: 3,
+    link: '/',
+    image: '/J.jpg',
+    alt: 'Image alt 3',
+    title: 'Project 3',
+    description: 'This is a basic description of the project.',
   },
 ];

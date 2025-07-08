@@ -24,3 +24,12 @@ export interface IntroProps {
     description: string;
   }[];
 }
+
+export interface ProjectList {
+  id: number;
+  link: string;
+  image: string;
+  alt: string;
+  title: string;
+  description: string;
+}
