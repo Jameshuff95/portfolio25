@@ -125,4 +125,12 @@ export const projectList: ProjectList[] = [
     title: 'Project 3',
     description: 'This is a basic description of the project.',
   },
+  {
+    id: 4,
+    link: '/',
+    image: '/J.jpg',
+    alt: 'Image alt 4',
+    title: 'Project 4',
+    description: 'This is a basic description of the project.',
+  },
 ];
