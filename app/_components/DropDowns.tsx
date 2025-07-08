@@ -1,15 +1,10 @@
-import { useDropdownToggle } from '../_hooks/useDropdowns';
+import { useDropdownToggle, useIconToggle } from '../_hooks/useDropdowns';
 import { introDropdowns } from '../_lists/lists';
-import { useState } from 'react';
 
 export const Dropdowns = () => {
   const { expandedId, toggleDropdown } = useDropdownToggle();
 
-  const [isClicked, setIsClicked] = useState(false);
-
-  const handleIsClicked = () => {
-    setIsClicked(!isClicked);
-  };
+  const { activeId, toggleIcon } = useIconToggle();
 
   return (
     <main className="flex flex-col p-2">
@@ -27,11 +22,11 @@ export const Dropdowns = () => {
                 <h3 className="text-3xl">{dropdown.title}</h3>
                 <span
                   onClick={() => {
-                    handleIsClicked();
+                    toggleIcon(dropdown.id);
                   }}
                 >
                   <i
-                    className={`bi ${isClicked ? 'bi-chevron-down' : 'bi-chevron-up'} cursor-pointer text-4xl`}
+                    className={`bi ${activeId === dropdown.id ? 'bi-chevron-down' : 'bi-chevron-up'} cursor-pointer text-4xl`}
                     onClick={() => toggleDropdown(dropdown.id)}
                     role="button"
                     aria-expanded={expandedId === dropdown.id}

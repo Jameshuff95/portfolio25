@@ -9,3 +9,13 @@ export const useDropdownToggle = () => {
 
   return { expandedId, toggleDropdown };
 };
+
+export const useIconToggle = () => {
+  const [activeId, setActiveId] = useState<number | null>(null);
+
+  const toggleIcon = (id: number) => {
+    setActiveId((prev) => (prev === id ? null : id));
+  };
+
+  return { activeId, toggleIcon };
+};
