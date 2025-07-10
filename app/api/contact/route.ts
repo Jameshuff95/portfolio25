@@ -1,7 +1,7 @@
 import { NextResponse } from 'next/server';
 import { Resend } from 'resend';
 
-const resend = new Resend(process.env.RESEND_API_KEY); // Store your key in .env.local
+const resend = new Resend(process.env.RESEND_API_KEY);
 
 export async function POST(req: Request) {
   try {
@@ -18,7 +18,12 @@ export async function POST(req: Request) {
       text: `From: ${name} (${email})\n\n${message}`,
     });
 
-    console.log(result);
+    if (result.error) {
+      return NextResponse.json(
+        { error: result.error.message },
+        { status: 500 }
+      );
+    }
 
     return NextResponse.json({ success: true });
   } catch (error) {
