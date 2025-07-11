@@ -33,3 +33,10 @@ export interface ProjectList {
   title: string;
   description: string;
 }
+
+export interface ButtonProps {
+  title: string;
+  onClick?: (e: React.FormEvent<HTMLButtonElement>) => void;
+  disabled?: boolean;
+  className?: string;
+}

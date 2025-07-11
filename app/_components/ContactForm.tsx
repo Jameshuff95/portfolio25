@@ -1,6 +1,8 @@
 import { useState } from 'react';
-
 import { emailPattern } from '../_regex/regex';
+import Button from './Button';
+import SuccessMessage from './SuccessMessage';
+import ErrorMessage from './ErrorMessage';
 
 export const ContactForm = () => {
   const [formData, setFormData] = useState({
@@ -11,6 +13,10 @@ export const ContactForm = () => {
 
   const [isValid, setIsValid] = useState(true);
 
+  const [submissionStatus, setSubmissionStatus] = useState<
+    'success' | 'error' | null
+  >(null);
+
   const handleChange = (
     e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
   ) => {
@@ -18,27 +24,11 @@ export const ContactForm = () => {
     setFormData((prev) => {
       const updated = { ...prev, [name]: value };
       if (name === 'email') {
-        setIsValid(emailPattern.test(formData.email));
+        setIsValid(emailPattern.test(value));
       }
       return updated;
     });
   };
-
-  const showSuccessMessage = () => (
-    <div className="border p-2 bg-foreground text-background">
-      <p>Your message has been sent successfully!</p>
-      <p>
-        Thank you for your message! You will hear back from me as soon as I am
-        available.
-      </p>
-    </div>
-  );
-
-  const showFailureMessage = () => (
-    <div className="border p-2 bg-foreground text-background">
-      <p>There was an error sending your message. Please Try again Later.</p>
-    </div>
-  );
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -48,14 +38,22 @@ export const ContactForm = () => {
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(formData),
       });
+
       const data = await res.json();
-      if (!res.ok) throw new Error(data.error || 'Something went wrong');
-      showSuccessMessage();
+
+      if (!res.ok) {
+        setSubmissionStatus('error');
+        throw new Error(data.error || 'Something went wrong');
+      }
+
       setFormData({ name: '', email: '', message: '' });
+      setSubmissionStatus('success');
     } catch (err) {
-      showFailureMessage();
       console.error(err);
+      setSubmissionStatus('error');
     }
+
+    setTimeout(() => setSubmissionStatus(null), 5000);
   };
 
   return (
@@ -113,13 +111,11 @@ export const ContactForm = () => {
         </label>
 
         {/* submit button */}
-        <button
-          type="submit"
-          className="bg-blue-600 text-white p-4 rounded hover:bg-blue-700 transition"
-        >
-          Send Message
-        </button>
+        <Button title="Submit Message" onClick={handleSubmit} />
       </form>
+
+      {submissionStatus === 'success' && <SuccessMessage />}
+      {submissionStatus === 'error' && <ErrorMessage />}
     </section>
   );
 };
