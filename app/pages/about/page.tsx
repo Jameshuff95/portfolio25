@@ -1,3 +1,9 @@
+import React from 'react';
+import AboutSummary from '@/app/_components/AboutSummary';
+import Timeline from '@/app/_components/Timeline';
+import StatsPanel from '@/app/_components/StatsPanel';
+import SkillTags from '@/app/_components/SkillTags';
+
 const About = () => {
   return (
     <main>
@@ -5,27 +11,16 @@ const About = () => {
         <header>
           <h1 className="text-3xl text-center">More about James 👇</h1>
         </header>
-        <article className="border p-2  bg-foreground text-background">
-          <div className="flex flex-col gap-2">
-            <p>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt
-              harum cumque amet ipsa nostrum beatae saepe, ipsum ullam impedit
-              expedita at accusamus, id dolore nobis libero esse possimus enim
-              vero, sed veritatis facere?
-            </p>
-            <p>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt
-              harum cumque amet ipsa nostrum beatae saepe, ipsum ullam impedit
-              expedita at accusamus, id dolore nobis libero esse possimus enim
-              vero, sed veritatis facere?
-            </p>
-            <p>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt
-              harum cumque amet ipsa nostrum beatae saepe, ipsum ullam impedit
-              expedita at accusamus, id dolore nobis libero esse possimus enim
-              vero, sed veritatis facere?
-            </p>
-          </div>
+        <article className="p-2 flex flex-col gap-5">
+          {/* about me paragraphs */}
+          <AboutSummary />
+          {/* Quick Stats Panel*/}
+          <StatsPanel />
+          {/* Timeline of Growth */}
+          <Timeline />
+          {/* Animated Skill Tags*/}
+          <SkillTags />
+          {/* FAQS Button */}
         </article>
       </section>
     </main>

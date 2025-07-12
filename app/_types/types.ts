@@ -40,3 +40,19 @@ export interface ButtonProps {
   disabled?: boolean;
   className?: string;
 }
+
+export interface TimelineList {
+  id: number;
+  title: string;
+}
+
+export interface Stats {
+  id: number;
+  title: string;
+  value: string | number;
+}
+
+export interface Skills {
+  id: number;
+  title: string;
+}

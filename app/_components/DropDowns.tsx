@@ -26,7 +26,7 @@ export const Dropdowns = () => {
                   }}
                 >
                   <i
-                    className={`bi ${activeId === dropdown.id ? 'bi-chevron-down' : 'bi-chevron-up'} cursor-pointer text-4xl`}
+                    className={`bi ${activeId === dropdown.id ? 'bi-chevron-up' : ' bi-chevron-down'} cursor-pointer text-4xl`}
                     onClick={() => toggleDropdown(dropdown.id)}
                     role="button"
                     aria-expanded={expandedId === dropdown.id}

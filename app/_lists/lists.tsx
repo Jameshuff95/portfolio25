@@ -1,4 +1,10 @@
-import { IntroProps, ProjectList } from '../_types/types';
+import {
+  IntroProps,
+  ProjectList,
+  TimelineList,
+  Stats,
+  Skills,
+} from '../_types/types';
 
 export const introWords: IntroProps[] = [
   {
@@ -115,7 +121,7 @@ export const projectList: ProjectList[] = [
   {
     id: 1,
     link: '/',
-    image: '/J.jpg',
+    image: '/placeholder.png',
     alt: 'Image alt 1',
     title: 'Project 1',
     description: 'This is a basic description of the project.',
@@ -123,7 +129,7 @@ export const projectList: ProjectList[] = [
   {
     id: 2,
     link: '/',
-    image: '/J.jpg',
+    image: '/placeholder.png',
     alt: 'Image alt 2',
     title: 'Project 2',
     description: 'This is a basic description of the project.',
@@ -131,7 +137,7 @@ export const projectList: ProjectList[] = [
   {
     id: 3,
     link: '/',
-    image: '/J.jpg',
+    image: '/placeholder.png',
     alt: 'Image alt 3',
     title: 'Project 3',
     description: 'This is a basic description of the project.',
@@ -139,9 +145,86 @@ export const projectList: ProjectList[] = [
   {
     id: 4,
     link: '/',
-    image: '/J.jpg',
+    image: '/placeholder.png',
     alt: 'Image alt 4',
     title: 'Project 4',
     description: 'This is a basic description of the project.',
+  },
+];
+
+export const timelineList: TimelineList[] = [
+  {
+    id: 1,
+    title: 'Timeline 1',
+  },
+  {
+    id: 2,
+    title: 'Timeline 2',
+  },
+  {
+    id: 3,
+    title: 'Timeline 3',
+  },
+  {
+    id: 4,
+    title: 'Timeline 4',
+  },
+];
+
+export const statsList: Stats[] = [
+  {
+    id: 1,
+    title: 'Years of Experience',
+    value: '4+',
+  },
+  {
+    id: 2,
+    title: 'Languages:',
+    value:
+      'Javascript, Typescript, Git, Bash, Powershell, SQL, PostgreSQL, MongoDB, MariaDB',
+  },
+  {
+    id: 3,
+    title: 'Tools',
+    value: 'Next.js, Vercel, Resend, Github',
+  },
+];
+
+export const skills: Skills[] = [
+  {
+    id: 1,
+    title: 'Skill 1',
+  },
+  {
+    id: 2,
+    title: 'Skill 2',
+  },
+  {
+    id: 3,
+    title: 'Skill 3',
+  },
+  {
+    id: 4,
+    title: 'Skill 4',
+  },
+  {
+    id: 5,
+    title: 'Skill 5',
+  },
+  {
+    id: 6,
+    title: 'Skill 6',
+  },
+  {
+    id: 7,
+    title: 'Skill 4',
+  },
+  {
+    id: 8,
+    title: 'Skill 5',
+  },
+  {
+    id: 9,
+    title: 'Skill 6',
   },
 ];
