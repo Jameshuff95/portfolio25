@@ -34,6 +34,7 @@ export const introPhrases: IntroProps[] = [
   },
 ];
 
+// Goals
 export const introDropdowns: IntroProps[] = [
   {
     id: 1,
@@ -41,60 +42,70 @@ export const introDropdowns: IntroProps[] = [
     info: [
       {
         id: 1,
-        title: 'About Title 1',
-        description: 'This is a description.',
+        title: 'Advance My Technical Versatility',
+        description:
+          'Continue expanding my skill set by learning backend technologies and deepening understanding of scalable architecture to build more complete, production-ready applications.',
       },
       {
         id: 2,
-        title: 'About Title 2',
-        description: 'This is a description.',
+        title: 'Elevate Accessibility & User Experience',
+        description:
+          'Prioritize accessibility and semantic structure in every project to deliver inclusive, intuitive experiences for all users.',
       },
       {
         id: 3,
-        title: 'About Title 3',
-        description: 'This is a description.',
+        title: 'Optimize for Modularity and Reusability',
+        description:
+          'Create robust, reusable components and hooks to support maintainable, scalable codebases across projects.',
       },
     ],
   },
   {
     id: 2,
-    title: 'My Achievements',
+    title: 'My Acheivements',
     info: [
       {
         id: 1,
-        title: 'Achievement 1',
-        description: 'This is a description.',
+        title: 'Fostered Team Growth Through Informal Mentorship',
+        description:
+          'Regularly offered advice and encouragement to coworkers exploring new skills or roles while providing tech guidance, career support, and lighthearted mentorship that strengthened team morale.',
       },
       {
         id: 2,
-        title: 'Achievement 2',
-        description: 'This is a description.',
+        title:
+          'Built a Fully Functional Contact Form with Confirmation Messaging',
+        description:
+          'Developed a production-ready contact form using Next.js and TypeScript, featuring backend email delivery via API integration, real-time confirmation messaging, and clean UX. Deployed through Vercel for optimized performance and scalability.',
       },
       {
         id: 3,
-        title: 'Achievement 3',
-        description: 'This is a description.',
+        title: 'Self-Taught Next.js & TypeScript for Scalable Web Development',
+        description:
+          'Independently learned and implemented Next.js and TypeScript to build modular, production-ready applications featuring: dynamic routing, type safety, and full backend integration.',
       },
     ],
   },
   {
     id: 3,
-    title: 'Other',
+    title: 'Workplace Strengths',
     info: [
       {
         id: 1,
-        title: 'Other 1',
-        description: 'This is a description.',
+        title: 'Collaborative Leadership',
+        description:
+          'Offer advice, foster curiosity, and uplift teammates without needing a title',
       },
       {
         id: 2,
-        title: 'Other 2',
-        description: 'This is a description.',
+        title: 'User Experience Sensitivity',
+        description:
+          'Spot UI/UX flaws that hinder usability, from clumped buttons to inefficient layouts, and suggest actionable improvements.',
       },
       {
         id: 3,
-        title: 'Other 3',
-        description: 'This is a description.',
+        title: 'Emotional Intelligence',
+        description:
+          'Balance good-faith teasing, mentorship, and respectful communication to build trust and a strong team culture.',
       },
     ],
   },

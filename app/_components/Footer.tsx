@@ -11,7 +11,7 @@ const Footer = () => {
             key={footerLink.id}
             aria-label={footerLink.ariaLabel}
             href={footerLink.href}
-            className="border flex justify-center items-center text-center"
+            className=" flex justify-center items-center text-center p-3"
           >
             {footerLink.title}
           </Link>

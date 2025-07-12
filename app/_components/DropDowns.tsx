@@ -42,8 +42,12 @@ export const Dropdowns = () => {
                 >
                   {dropdown.info?.map((item) => (
                     <div key={item.id} className="m-2">
-                      <p className="text-2xl">{item.title}</p>
-                      <p className="text-xl">{item.description}</p>
+                      <p className="text-2xl underline">{item.title}:</p>
+
+                      <br />
+                      <em>
+                        <p className="text-xl">- {item.description}</p>
+                      </em>
                     </div>
                   ))}
                 </div>
