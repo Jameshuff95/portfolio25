@@ -3,6 +3,8 @@ import AboutSummary from '@/app/_components/AboutSummary';
 import Timeline from '@/app/_components/Timeline';
 import StatsPanel from '@/app/_components/StatsPanel';
 import SkillTags from '@/app/_components/SkillTags';
+import Button from '@/app/_components/Button';
+import Link from 'next/link';
 
 const About = () => {
   return (
@@ -20,7 +22,10 @@ const About = () => {
           <Timeline />
           {/* Animated Skill Tags*/}
           <SkillTags />
-          {/* FAQS Button */}
+          {/* Custom Question Button */}
+          <Link href="/pages/contact" className="flex justify-center">
+            <Button title="Ask A Custom Question" className="mx-auto" />
+          </Link>
         </article>
       </section>
     </main>

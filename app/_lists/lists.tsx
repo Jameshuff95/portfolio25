@@ -4,6 +4,7 @@ import {
   TimelineList,
   Stats,
   Skills,
+  Technologies,
 } from '../_types/types';
 
 export const introWords: IntroProps[] = [
@@ -125,6 +126,8 @@ export const projectList: ProjectList[] = [
     alt: 'Image alt 1',
     title: 'Project 1',
     description: 'This is a basic description of the project.',
+    tech: ['tech 1', 'tech 2', 'tech 3'],
+    value: 0,
   },
   {
     id: 2,
@@ -133,6 +136,8 @@ export const projectList: ProjectList[] = [
     alt: 'Image alt 2',
     title: 'Project 2',
     description: 'This is a basic description of the project.',
+    tech: ['tech 1', 'tech 2', 'tech 3'],
+    value: 1,
   },
   {
     id: 3,
@@ -141,6 +146,8 @@ export const projectList: ProjectList[] = [
     alt: 'Image alt 3',
     title: 'Project 3',
     description: 'This is a basic description of the project.',
+    tech: ['tech 1', 'tech 2', 'tech 3'],
+    value: 2,
   },
   {
     id: 4,
@@ -149,6 +156,8 @@ export const projectList: ProjectList[] = [
     alt: 'Image alt 4',
     title: 'Project 4',
     description: 'This is a basic description of the project.',
+    tech: ['tech 1', 'tech 2', 'tech 3'],
+    value: 4,
   },
 ];
 
@@ -217,14 +226,38 @@ export const skills: Skills[] = [
   },
   {
     id: 7,
-    title: 'Skill 4',
+    title: 'Skill 7',
   },
   {
     id: 8,
-    title: 'Skill 5',
+    title: 'Skill 8',
+  },
+];
+
+export const technologies: Technologies[] = [
+  {
+    id: 0,
+    title: 'All',
+    value: 0,
   },
   {
-    id: 9,
-    title: 'Skill 6',
+    id: 1,
+    title: 'Websites',
+    value: 1,
+  },
+  {
+    id: 2,
+    title: 'Web Apps',
+    value: 2,
+  },
+  {
+    id: 3,
+    title: 'Games',
+    value: 3,
+  },
+  {
+    id: 4,
+    title: 'Other',
+    value: 4,
   },
 ];

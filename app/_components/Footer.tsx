@@ -4,7 +4,7 @@ import { footerLinks } from '../_links/links';
 
 const Footer = () => {
   return (
-    <footer className="p-2 text-foreground">
+    <footer className="p-2 text-foreground border-t">
       <ul className="grid grid-cols-3 items-center justify-evenly gap-1">
         {footerLinks.map((footerLink) => (
           <Link

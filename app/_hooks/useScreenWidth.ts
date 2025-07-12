@@ -4,7 +4,7 @@ import { useState, useEffect } from 'react';
 
 // prettier-ignore
 export const useScreenWidth = () => {
-  const [width, setWidth] = useState<number | null>(null);
+  const [width, setWidth] = useState<number>(0);
 
   useEffect(() => {
     const handleResize = () => setWidth(window.innerWidth);
@@ -15,3 +15,9 @@ export const useScreenWidth = () => {
 
   return width;
 };
+
+/*
+
+| null>(null)
+
+*/

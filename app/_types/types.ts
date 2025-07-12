@@ -32,6 +32,8 @@ export interface ProjectList {
   alt: string;
   title: string;
   description: string;
+  tech: string[];
+  value: number;
 }
 
 export interface ButtonProps {
@@ -55,4 +57,10 @@ export interface Stats {
 export interface Skills {
   id: number;
   title: string;
+}
+
+export interface Technologies {
+  id: number;
+  title: string;
+  value: number;
 }
