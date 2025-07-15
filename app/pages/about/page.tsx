@@ -24,7 +24,10 @@ const About = () => {
           <SkillTags />
           {/* Custom Question Button */}
           <Link href="/pages/contact" className="flex justify-center">
-            <Button title="Ask A Custom Question" className="mx-auto" />
+            <Button
+              title="Ask Custom Question"
+              className="mx-auto w-full text-3xl"
+            />
           </Link>
         </article>
       </section>
