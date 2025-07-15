@@ -164,19 +164,47 @@ export const projectList: ProjectList[] = [
 export const timelineList: TimelineList[] = [
   {
     id: 1,
-    title: 'Timeline 1',
+    title: 'Learned Semantic HTML & Responsive CSS',
   },
   {
     id: 2,
-    title: 'Timeline 2',
+    title: 'Mastered JavaScript Fundamentals & DOM Manipulation',
   },
   {
     id: 3,
-    title: 'Timeline 3',
+    title: 'Version Control with Git & GitHub Collaboration',
   },
   {
     id: 4,
-    title: 'Timeline 4',
+    title: 'Built Interactive UIs with React & Hooks',
+  },
+  {
+    id: 5,
+    title: 'Styled Projects Rapidly with Tailwind CSS',
+  },
+  {
+    id: 6,
+    title: 'Leveled Up with TypeScript for Safe Components',
+  },
+  {
+    id: 7,
+    title: 'Improved Accessibility & User Experience',
+  },
+  {
+    id: 8,
+    title: 'Integrated APIs for Dynamic Content',
+  },
+  {
+    id: 9,
+    title: 'Built Scalable Apps with Next.js Routing & Optimization',
+  },
+  {
+    id: 10,
+    title: 'Handled Fullstack Logic with Next.js API Routes',
+  },
+  {
+    id: 11,
+    title: 'Shipped Fullstack Projects & Deployed with Vercel',
   },
 ];
 
@@ -188,7 +216,7 @@ export const statsList: Stats[] = [
   },
   {
     id: 2,
-    title: 'Languages:',
+    title: 'Languages',
     value:
       'Javascript, Typescript, Git, Bash, Powershell, SQL, PostgreSQL, MongoDB, MariaDB',
   },
@@ -199,38 +227,62 @@ export const statsList: Stats[] = [
   },
 ];
 
-export const skills: Skills[] = [
+export const skillsList: Skills[] = [
+  {
+    id: 0,
+    title: 'HTML 5',
+  },
   {
     id: 1,
-    title: 'Skill 1',
+    title: 'Vanilla JS',
   },
   {
     id: 2,
-    title: 'Skill 2',
+    title: 'React.js',
   },
   {
     id: 3,
-    title: 'Skill 3',
+    title: 'Next.js',
   },
   {
     id: 4,
-    title: 'Skill 4',
+    title: 'Node.js',
   },
   {
     id: 5,
-    title: 'Skill 5',
+    title: 'Jest.js',
   },
   {
     id: 6,
-    title: 'Skill 6',
+    title: 'Typescript',
   },
   {
     id: 7,
-    title: 'Skill 7',
+    title: 'SQL Server',
   },
   {
     id: 8,
-    title: 'Skill 8',
+    title: 'MariaDB',
+  },
+  {
+    id: 9,
+    title: 'MongoDB',
+  },
+  {
+    id: 10,
+    title: 'Git',
+  },
+  {
+    id: 11,
+    title: 'Github',
+  },
+  {
+    id: 12,
+    title: 'Netlify',
+  },
+  {
+    id: 13,
+    title: 'Vercel',
   },
 ];
 

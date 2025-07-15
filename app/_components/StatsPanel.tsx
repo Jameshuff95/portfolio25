@@ -3,17 +3,17 @@ import { statsList } from '../_lists/lists';
 
 const StatsPanel = () => {
   return (
-    <main>
+    <main className="flex flex-col gap-5">
       <header>
-        <h3 className="text-xl text-center font-bold">Stats:</h3>
+        <h3 className="text-5xl text-center font-bold ">Personal Stats:</h3>
       </header>
-      <ul className="">
+      <ul>
         {statsList.map((stat) => (
-          <div key={stat.id} className="flex p-2">
-            <p className="text-center flex justify-start w-[50%]">
-              {stat.title}
+          <div key={stat.id} className="flex p-2 gap-3">
+            <p className="text-center flex justify-start w-[25%] font-bold text-lg">
+              {stat.title}:
             </p>
-            <p className="w-[50%]">{stat.value}</p>
+            <p className="w-[75%] text-xl">{stat.value}</p>
           </div>
         ))}
       </ul>

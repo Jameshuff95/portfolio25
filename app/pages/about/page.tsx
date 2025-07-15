@@ -11,7 +11,7 @@ const About = () => {
     <main>
       <section className="p-2">
         <header>
-          <h1 className="text-3xl text-center">More about James 👇</h1>
+          <h1 className="text-5xl text-center">More about James 👇</h1>
         </header>
         <article className="p-2 flex flex-col gap-5">
           {/* about me paragraphs */}

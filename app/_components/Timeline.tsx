@@ -9,11 +9,7 @@ const Timeline = () => {
           <header>
             <h3 className="font-bold text-center text-4xl">Growth Timeline</h3>
           </header>
-          <article>
-            <div className="p-2 flex flex-grow overflow-x-auto items-center gap-8 h-40">
-              <TimelineDot />
-            </div>
-          </article>
+          <TimelineDot />
         </article>
       </section>
     </main>
