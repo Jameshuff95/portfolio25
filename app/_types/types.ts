@@ -64,3 +64,11 @@ export interface Technologies {
   title: string;
   value: number;
 }
+
+export interface TypeIntroProps {
+  className?: string;
+}
+
+export interface DropdownProps {
+  className?: string;
+}

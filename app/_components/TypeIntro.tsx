@@ -1,7 +1,8 @@
 import { useState, useEffect } from 'react';
 import { introWords } from '../_lists/lists';
+import { TypeIntroProps } from '../_types/types';
 
-export const TypeIntro = () => {
+export const TypeIntro = ({ className }: TypeIntroProps) => {
   const [currentWordIndex, setCurrentWordIndex] = useState(0);
   const [displayText, setDisplayText] = useState('');
   const [isDeleting, setIsDeleting] = useState(false);
@@ -32,15 +33,17 @@ export const TypeIntro = () => {
   }, [displayText, isDeleting, currentWordIndex, currentTitle]);
 
   return (
-    <section className="flex flex-col justify-center gap-3 items-center text-3xl text-center">
-      <header>
-        <h2>Hi! My name is James.</h2>
+    <section className={`${className}`}>
+      <header className="md:w-[40%]">
+        <h2 className="text-6xl min-w-full h-full flex flex-col items-center justify-center">
+          My name is <span className="font-bold">James.</span>
+        </h2>
       </header>
 
-      <article>
-        <div className="flex flex-col gap-1">
-          <p>I am a</p>
-          <p className="font-mono">
+      <article className="md:w-[60%]">
+        <div className="flex flex-col justify-center gap-1 w-full h-full min-h-[150]">
+          <p className="text-3xl">I am a</p>
+          <p className="font-mono font-bold text-5xl">
             <span aria-label="animated-typing">{displayText}</span>
             <span className="animate-pulse relative z-[1]">|</span>
           </p>

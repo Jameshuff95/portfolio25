@@ -14,7 +14,7 @@ export const introWords: IntroProps[] = [
   },
   {
     id: 2,
-    title: 'Tester.',
+    title: 'Blue-collar Worker.',
   },
   {
     id: 3,
@@ -69,7 +69,7 @@ export const introDropdowns: IntroProps[] = [
   },
   {
     id: 2,
-    title: 'My Acheivements',
+    title: 'My Achievements',
     info: [
       {
         id: 1,
