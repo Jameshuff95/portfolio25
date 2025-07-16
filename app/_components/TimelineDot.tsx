@@ -7,18 +7,17 @@ const TimelineDot = () => {
     <div className="p-2 flex flex-grow overflow-x-auto items-center gap-8 h-[200]">
       {timelineList.map((timeline) => (
         <React.Fragment key={timeline.id}>
-          {timeline.id <= timelineList.length - 1 ? (
+          {timeline.id <= timelineList.length ? (
             <>
-              <div className="border p-6 rounded-full flex items-center justify-center text-sm text-center w-[50%]">
+              <div className="border p-4 rounded-full flex items-center justify-center text-sm text-center min-w-[25%] h-[75%]">
                 {timeline.title}
               </div>
-              <FaLongArrowAltRight className="text-6xl min-w-[50]" />
+
+              {timeline.id < timelineList.length ? (
+                <FaLongArrowAltRight className="text-6xl min-w-[50]" />
+              ) : null}
             </>
-          ) : (
-            <div className="border p-6 bg-foreground rounded-full  text-background flex items-center justify-center text-sm text-center min-w-[100]">
-              {timeline.title}
-            </div>
-          )}
+          ) : null}
         </React.Fragment>
       ))}
     </div>

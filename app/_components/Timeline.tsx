@@ -7,7 +7,7 @@ const Timeline = () => {
       <section>
         <article>
           <header>
-            <h3 className="font-bold text-center text-4xl">Growth Timeline</h3>
+            <h3 className="font-bold text-center text-3xl">Growth Timeline</h3>
           </header>
           <TimelineDot />
         </article>

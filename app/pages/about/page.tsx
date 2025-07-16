@@ -13,6 +13,7 @@ const About = () => {
         <header>
           <h1 className="text-5xl text-center">More about James 👇</h1>
         </header>
+        <br />
         <article className="p-2 flex flex-col gap-5">
           {/* about me paragraphs */}
           <AboutSummary />
@@ -25,7 +26,7 @@ const About = () => {
           {/* Custom Question Button */}
           <Link href="/pages/contact" className="flex justify-center">
             <Button
-              title="Ask Custom Question"
+              title="Ask Me A Question"
               className="mx-auto w-full text-3xl"
             />
           </Link>

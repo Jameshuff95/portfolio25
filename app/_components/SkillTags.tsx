@@ -10,7 +10,7 @@ const SkillTags = () => {
         {skillsList.map((skill) => (
           <li
             key={skill.id}
-            className="border rounded-lg p-2 flex items-center justify-center text-center cursor-pointer hover:text-background hover:bg-foreground w-[15%]"
+            className="border rounded-lg p-4 flex items-center justify-center text-center cursor-pointer hover:text-background hover:bg-foreground min-w-[15%] h-[75]"
           >
             {skill.title}
           </li>

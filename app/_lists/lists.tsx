@@ -211,7 +211,7 @@ export const timelineList: TimelineList[] = [
 export const statsList: Stats[] = [
   {
     id: 1,
-    title: 'Years of Experience',
+    title: 'Years Experience',
     value: '4+',
   },
   {
